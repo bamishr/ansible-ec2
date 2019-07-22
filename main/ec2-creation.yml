@@ -24,7 +24,7 @@
           rules_egress:
            - proto: all
              cidr_ip: 0.0.0.0/0
-          vpc_id: vpc-d8826ebd
+          vpc_id: vpc-8bac4ee0
 
     - name: Provision EC2 instance
       ec2:
@@ -42,7 +42,7 @@
               volume_type: gp2
               volume_size: 8
          monitoring: yes
-         vpc_subnet_id: subnet-18e7fa93
+         vpc_subnet_id: subnet-8d6121f7
          assign_public_ip: yes
          group: Ansible_Security_Group_AWS
       register: ec2
